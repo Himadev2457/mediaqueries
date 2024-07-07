@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    }
+    h1{
+    text-shadow:2px 2px red;
+    }
+    .t1{
+    height: 30vh;
+    width: 40vw;
+    position: relative;
+    left: 100px;
+    box-shadow: 5px 5px purple, 10px 10px lawngreen;
+    }
+     .t2{
+    height: 40vh;
+    width: 40vw;
+    position: relative;
+    left: 100px;
+    }
+     .t3{
+    height: 15vh;
+    width: 15vw;
+    position: relative;
+    left: 90px;
+    }
+    .md{
+    background-image: linear-gradient(to right, forestgreen,indigo,crimson);
+    }
+    .ms{
+    background-image: radial-gradient(red,green,blue);
+    }
+    .hb{
+    background-image: conic-gradient(from 90deg, crimson,indigo,gold,darkmagenta,fuchsia);
+    }
+    img{
+    height: 15vh;
+    width: 15vw;
+    }
+    @media screen and (max-width:425px){
+    .t2,.t3{
+    display: none;
+    }    
+    }
+    @media screen and (min-width:426px) and (max-width:760px) {
+        .t1,.t3{
+            display: none;
+        }
+    }
+    @media screen and (min-width:761px) {
+        .t1,.t2{
+        display: none;
+        }
+    }
+    </style>
+</head>
+<body>
+    <table class="t1">
+        <caption>
+            <h1>TABLE1</h1>
+        </caption>
+        <tr>
+            <td style="background-color: blue;"></td>
+            <td style="background-color: palevioletred;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: forestgreen;"></td>
+            <td style="background-color: aqua;"></td>
+        </tr>
+    </table>
+
+    <table class="t2">
+        <caption>
+            <h1>TABLE2</h1>
+        </caption>
+        <tr>
+            <td class="md"></td>
+            <td class="md"></td>
+            <td class="md"></td>
+        </tr>
+        <tr>
+            <td class="ms"></td>
+            <td class="ms"></td>
+            <td class="ms"></td>
+        </tr>
+        <tr>
+            <td class="hb"></td>
+            <td class="hb"></td>
+            <td class="hb"></td>
+        </tr>
+    </table>
+
+    <table class="t3">
+        <caption>
+            <h1>TABLE3</h1>
+        </caption>
+        <tr>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+        </tr>
+        <tr>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+        </tr>
+        <tr>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+        </tr>
+        <tr>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+            <td><img src="../html/assets/images/surya.jpeg"></td>
+        </tr>
+    </table>
+</body>
+</html>
